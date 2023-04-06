@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 /* Home-section_top */
 
@@ -58,6 +59,7 @@ nav{
     border-radius: 10px;
  }
  .logIn-form h1{
+    color: white;
     text-align: center;
     padding: 0 0 20px 0;
     border-bottom: 1px solid silver;
@@ -150,23 +152,49 @@ form .txtfield{
 }
 /* Home Top-Details */
 
-.bg-details{
+.home-top_details{
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(lightslategray, steelblue);
-    background-image: url(img/home-page-bg.jpg);
+    background: white;
+    position: relative;
+}
+
+.bg-details{
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:center;
     background-size: cover;
-    filter: blur(5px);
     overflow: hidden;
+    position: absolute;
+}
+.home-top_details{
+
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 .details{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: crimson;
+    height: 85vh;
+}
+.details img{
+    width: 550px;
+    height: 450px;
+    border-radius: 30px;
+    border: 3px solid navy;
+    float: left;
+    margin-left: 50px;
+    margin-right: 100px;
+    box-shadow: 10px 15px 20px slategray;
+}
+.textbox-info{
+    padding: 20px;
+    color: black;
+    text-align: justify;
+}
+.textbox-info h1{
     text-align: center;
-    font-size: 24px;
+    font-size: 45px;
+}
+.textbox-info span{
+    font-size: 20px;
 }
